@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
  
-        let people = Double(peopleField.text!) ?? 1
+        let people = Double(peopleField.text!) ?? 0
         if people < 1.0 {
             let amountPerPerson = total
             perPersonPayLabel.text = String(format: "$%.2f", amountPerPerson)
